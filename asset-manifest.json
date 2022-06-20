@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.4f0eaa43.css",
-    "main.js": "/weather-app/static/js/main.518ea8af.js",
+    "main.css": "/weather-app/static/css/main.881d03f4.css",
+    "main.js": "/weather-app/static/js/main.03307e80.js",
     "static/js/787.d9312eb8.chunk.js": "/weather-app/static/js/787.d9312eb8.chunk.js",
     "static/media/noaa-ZVhm6rEKEX8-unsplash (1).jpg": "/weather-app/static/media/noaa-ZVhm6rEKEX8-unsplash (1).8f33ad870544cb82d68a.jpg",
     "static/media/vidar-nordli-mathisen-Vl5Awbq9jx0-unsplash.jpg": "/weather-app/static/media/vidar-nordli-mathisen-Vl5Awbq9jx0-unsplash.0d86328f5cfe1ec51e38.jpg",
+    "static/media/revicons.eot": "/weather-app/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/weather-app/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/weather-app/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/weather-app/index.html",
-    "main.4f0eaa43.css.map": "/weather-app/static/css/main.4f0eaa43.css.map",
-    "main.518ea8af.js.map": "/weather-app/static/js/main.518ea8af.js.map",
+    "main.881d03f4.css.map": "/weather-app/static/css/main.881d03f4.css.map",
+    "main.03307e80.js.map": "/weather-app/static/js/main.03307e80.js.map",
     "787.d9312eb8.chunk.js.map": "/weather-app/static/js/787.d9312eb8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f0eaa43.css",
-    "static/js/main.518ea8af.js"
+    "static/css/main.881d03f4.css",
+    "static/js/main.03307e80.js"
   ]
 }
