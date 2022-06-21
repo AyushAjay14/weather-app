@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from "react";
-import Cards from "./Covid/mCards";
-import Navbar from "./Covid/mNavbar";
-import LiveCamers from "./Covid/LiveCamers";
+import Cards from "./my_components/mCards";
+import Navbar from "./my_components/mNavbar";
+import LiveCamers from "./my_components/LiveCamers";
 
 import "./newApp.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Aboutplace from "./Covid/Aboutplace";
+import Aboutplace from "./my_components/Aboutplace";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import Frontpage from "./my_components/Frontpage";
-import Map from "./Covid/Map";
-import Tourist from "./Covid/Tourist";
-function MovieApp() {
+import Map from "./my_components/myMap";
+import Tourist from "./my_components/Tourist";
+function App() {
   const [istoast, setistoast] = useState(false);
   const [cityinvalid, setcityinvalid] = useState(false);
   const [entry, setEntry] = useState("");
@@ -19,21 +19,7 @@ function MovieApp() {
   // const [input, setInput] = useState("NEW YORK");
   const [data, setData] = useState("");
   const [icon, setIcon] = useState("sun");
-  const [info, setinfo] = useState("Your text will appear here.");
-  const [img, setimg] = useState([
-    {
-      img: "https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg",
-    },
-    {
-      img: "https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg",
-    },
-    {
-      img: "https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg",
-    },
-    {
-      img: "https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg",
-    },
-  ]);
+  const [info, setinfo] = useState(" Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam, fugit ut et libero atque culpa, sit, officia consequuntur sed molestiae consectetur cupiditate. Nulla molestias optio aliquam reprehenderit distinctio sed, omnis inventore tempore fugit facilis aliquid eligendi mollitia, enim veritatis reiciendis cum atque provident. Quasi fugiat modi nulla dolores suscipit dolorem sunt nostrum minus. Porro, inventore nulla temporibus accusantium velit quisquam similique, quas culpa, cupiditate repudiandae in totam! Dolor minima assumenda eaque deserunt! Id nesciunt atque, at itaque consequatur neque sint, doloribus, iusto excepturi quae consequuntur dicta libero qui officiis eius dolores impedit cum adipisci aliquam culpa! Et, asperiores numquam?");
   const notify = () => toast(`🦄 Sorry ${entry.toUpperCase()} images are not available `, {
     position: "top-right",
     autoClose: 5000,
@@ -83,12 +69,7 @@ function MovieApp() {
                   cityinvalid={cityinvalid}
                   setcityinvalid={setcityinvalid}
                   citynotfound={citynotfound}
-                  istoast={istoast}
-                  setistoast = {setistoast}
-                  notify={notify}
                   isloading={isloading}
-                  img={img}
-                  setimg={setimg}
                   data={data}
                   icon={icon}
                   entry={entry}
@@ -104,7 +85,7 @@ function MovieApp() {
                     overflowX: "hidden",
                   }}
                 >
-                  <LiveCamers img={img} entry={entry} />
+                  <LiveCamers entry={entry} istoast={istoast} setistoast = {setistoast} notify={notify}/>
                 </div>
                 <div
                   style={{
@@ -129,8 +110,8 @@ function MovieApp() {
           />
           <Route path="/maps" element={
             <>
-            <Navbar />
-            <Map />
+            <Navbar/>
+            <Map style={{overflowX: "hidden" , innerWidth: "80vw"}}/>
             </>
           } />
         </Routes>
@@ -139,4 +120,4 @@ function MovieApp() {
   );
 }
 
-export default MovieApp;
+export default App;

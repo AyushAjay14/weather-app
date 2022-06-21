@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+.container-with-dots{
+    padding-left: 20px;
+    padding-top: 20px;
+}
 .nav_color{
     background-color: rgb(13,22,28) !important;
 }
@@ -112,7 +115,7 @@ input:required:focus{
 .imgheight{
     height: 210px;
     transition :cubic-bezier(1, 0, 0, 1);
-    width: 100%;
+    width: 90%;
 }
 @keyframes Faderight {
     0%{
@@ -160,7 +163,7 @@ input:required:focus{
 @media screen and (max-width : 1199px){
     .temp{
         font-weight: 500;
-        font-size: 4.95rem!important;
+        font-size: 4.75rem!important;
     }
     .heading{
         font-size: 3.5em
@@ -188,14 +191,14 @@ input:required:focus{
         margin-top : 18px;
     }
 }
-@media screen and (max-width : 1121px){
+/* @media screen and (max-width : 1121px){
     .imgheight{
         width: 207px;
         height: 170px;
        
         padding: 0 10px;
     }
-}
+} */
 @media screen and (max-width : 992px){
     .main-h1{
         font-size: 5em;
@@ -210,7 +213,7 @@ input:required:focus{
     }
     .temp{
         font-weight: 500;
-        font-size: 3.52rem!important;
+        font-size: 3.12rem!important;
     }
     .weather-icon {
         width: 70px;
@@ -258,15 +261,15 @@ input:required:focus{
     .fs-3{
         font-size: 1.8rem!important;
     }
-    .imgheight{
+    /* .imgheight{
         height: 210px;
         width: 280px;
        
         padding: 0 10px;
-    }
-    .lines::after{
+    } */
+    /* .lines::after{
         width: 100%;
-    }
+    } */
     .img1{
         width: 100%!important;
         margin-bottom: 20px;
@@ -274,9 +277,6 @@ input:required:focus{
         /* justify-content: center; */
         display: flex;
         flex-direction: column;
-    }
-    #cameras{
-        height: auto!important;
     }
     #weather{
         flex-direction: column;
@@ -292,6 +292,17 @@ input:required:focus{
     }
     .col {
         flex: 1 0 51%;
+    }
+}
+@media screen and (max-width : 831px) {
+       .imgheight{
+        height: 180px;
+        width: 250px;
+       
+        padding: 0 10px;
+    }
+    .container-with-dots{
+        padding-left: 0px;
     }
 }
 @media screen and (max-width : 507px){
@@ -349,6 +360,26 @@ input:required:focus{
         height: 205px;
     }
 }
+@media screen and (max-width : 464px) {
+    .container-with-dots{
+        padding-left: 4.5em;
+    }
+    .lines{
+        width: 38%;
+        display: inline-block;
+        margin-left: 3.5em!important;
+    }
+    .imgheight{
+        padding: 0%;
+        padding-right: 1.5em;
+    }
+    .lines::after{
+        width: 0;
+    }
+    .linesh5{
+        padding-left: 1.2em;
+    }
+}
 @media screen and (max-width : 385px){
     .main-h1{
         font-size: 2.4em;
@@ -363,16 +394,25 @@ input:required:focus{
     }
     .linesh5{
         font-size: 0.9em;
+        padding-left: 0.8em!important;
+
+    }
+    .bg-image{
+        margin-left: -13px;
     }
     .imgheight{
         height: 170px;
         width: 200px;
        
-        padding: 0 10px;
+        padding: 0 ;
+        padding-right: 0%;
     }
     .date{
         /* width: 104%!important; */
         font-size: 0.82em;
+    }
+    .lines{
+        margin-left: 1.95em!important;
     }
 }
 @media screen and (max-width : 280px){
