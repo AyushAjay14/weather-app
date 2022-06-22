@@ -33,7 +33,7 @@ function Carousell(props) {
     
       return (
         <>
-        <div className="container-fluid" id="cameras" style={{backgroundImage: "linear-gradient(to bottom, rgba(50,39,19,1), rgba(50,39,19,0.4))" , height : "505px" , zIndex : "2"}}>
+        <div className="container-fluid" id="cameras" style={{backgroundColor: "#f9fafb" , height : "655px" , zIndex : "2" , boxShadow: "0 10px 20px rgb(0 0 0 / 10%)"}}>
               <div className="text-center pt-5 text-light">
                   <h1 className='heading'>LIVE CAMERAS</h1>
               </div>
@@ -61,7 +61,7 @@ function Carousell(props) {
         max: 3000,
         min: 1024
       },
-      items: 4,
+      items: 3,
       partialVisibilityGutter: 40
     },
     mobile: {
@@ -93,14 +93,12 @@ function Carousell(props) {
 {arr.map((e) => {
                       return (
                         <>
-                            <div className='bg-image imgheight'>
                             <Zoom>
-                                <div className='bg-image hover-zoom'>
+                                <div className='bg-image hover-zoom' style={{width: "320px"}}>
                          <img src={e.urls.small} className='imgheight' />
                          </div>
                             </Zoom>
-                            </div> 
-                      <div className="text-lg-start ms-3 mt-3 text-light lines">
+                      <div className="text-lg-start ms-3 mt-3 text-light lines" >
                           <h5 className='linesh5' style={{textTransform: "uppercase"}}>{(props.entry === "" )?"NEW YORK": props.entry}</h5>
                       </div>
                         </>

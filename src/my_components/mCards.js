@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Zoom from 'react-reveal/Zoom';
 import HeadShake from 'react-reveal/HeadShake';
+import Navbar from "./mNavbar";
 function WHome(props) {
   const api = process.env.REACT_APP_API;
   useEffect(() => {
@@ -245,8 +246,10 @@ function WHome(props) {
     todaysDay();
   });
   return (
+    <>
     <div className="container-fluid back">
-      <div className="container" style={{ padding: "100px 0" }}>
+    <Navbar back = "transparent"/>
+      <div className="container" style={{ padding: "120px 0" }}>
         <Zoom left>
 
         <form className="d-flex pos needs-validation" onSubmit={search}>
@@ -298,6 +301,7 @@ function WHome(props) {
         </HeadShake>
       </div>
     </div>
+    </>
   );
 }
 
