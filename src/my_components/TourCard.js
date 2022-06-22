@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {
   Card,
   CardImg,
@@ -14,9 +15,11 @@ function TourCard({id , tourcard}) {
     <Card>
       <CardImg top width="100%" src={img} alt={alt} />
       <CardBody>
-        <Button outline color="secondary" className="float-end" href="tour">
+        <Link to="/tour"> 
+        <Button outline color="secondary" className="float-end">
           Read more
         </Button>
+        </Link>
         <CardTitle>{title}</CardTitle>
         <CardSubtitle>{subtitle}</CardSubtitle>
       </CardBody>

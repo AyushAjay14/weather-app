@@ -2,6 +2,7 @@ import React , {useState , useEffect} from 'react'
 import Zoom from 'react-reveal/Zoom';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import imgCard9 from "../img/img-card (9).jpg";
 function Carousell(props) {
     const [arr, setarr] = useState([]);
     useEffect(() => {
@@ -9,7 +10,7 @@ function Carousell(props) {
           const temp =[];
           const obj = {
             urls : {
-              small : "https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg"
+              small : imgCard9
             }
           }
           for (let index = 0; index < 5; index++) {

@@ -112,7 +112,7 @@ function App() {
             <Map style={{overflowX: "hidden" , innerWidth: "80vw"}}/>
             </>
           } />
-          <Route path="/tour" element={
+          <Route path="tour" element={
               <>
               <Navbar back="rgb(102,102,102)" />
               <Tour/>
