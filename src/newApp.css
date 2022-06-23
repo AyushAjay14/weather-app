@@ -78,13 +78,14 @@
     animation-delay: .9s;
 }
 #aboutplace{
-    opacity: 0;
-    animation : Fadeleft .5s forwards;
-    animation-delay: .5s;
+    /* opacity: 0; */
+    /* animation : Fadeleft .5s forwards; */
+    /* animation-delay: .5s; */
     background:url("https://images.unsplash.com/photo-1496950866446-3253e1470e8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-      /* position: fixed; */
+    position: sticky;
       background-size: cover;
-      background-position: center;
+      background-position: 50%;
+      background-attachment: fixed;
       
     
 }
